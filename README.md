@@ -3,6 +3,11 @@
 This repository is prepared for reviewing SVMRanker, which is submitted to [ESEC/FSE 2020 Tool Demo](https://2020.esec-fse.org/track/esecfse-2020-tool-demos#Call-for-Tool-Demos).
 SVMRanker utilizes SVM techniques to synthesize multiphase ranking functions for proving loop programs.
 
+## Screencast of the tool demo
+
+The screencast of the tool demostration, named SVMRanker_Screencast.mp4, can be downloaded inside this directory.
+
+
 ## Benchmarks
 We have used 225 programs in our experiments, which can be found at [./Benchmarks/](https://github.com/ESEC-FSE-2020-Tool-Demo-ID21/SVMRanker-demo/tree/master/Benchmark).
 
@@ -15,10 +20,6 @@ The original 91 C files obtained from SV-Comp before converting to Boogie files 
 ## Log files of the experiments
 
 The log files of the experiments can be found in the directory LogFiles/.
-
-## Screencast of the tool demo
-
-The screencast of the tool demostration, named SVMRanker_Screencast.mp4, can be downloaded inside this directory.
 
 ## SVMRanker
 ### Source Code
