@@ -1,5 +1,4 @@
-# SVMRanker - ESEC/FSE Tool Demo 2020
-# Review ID - 21
+# SVMRanker - ESEC/FSE Tool Demo 2020 - No. 21
 
 This repository is prepared for reviewing SVMRanker, which is submitted to [ESEC/FSE 2020 Tool Demo](https://2020.esec-fse.org/track/esecfse-2020-tool-demos#Call-for-Tool-Demos).
 SVMRanker utilizes SVM techniques to synthesize multiphase ranking functions for proving loop programs.
