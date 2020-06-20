@@ -16,6 +16,8 @@ The original 91 C files obtained from SV-Comp can be found at []().
 
 ## Log files of the experiments
 
+The log files of the experiments can found in the directory LogFiles/.
+
 ## Screencast of the tool demo
 
 The screencast of the tool demostration, named SVMRanker_Screencast.mp4, can be downloaded inside this directory.
@@ -37,8 +39,9 @@ pip3 install python-constraint
 ```
 
 ### Usage
+In the following, we assume that current directory is SVMRanker.
 
-After having installed the required software, SVMRanker can be used by entering the *src/* directory and then calling SVMRanker as follows: 
+After having installed the required software, SVMRanker can be used by entering the **src/** directory and then calling SVMRanker as follows: 
 ```
   python3 ./CLIMain.py --help
 ```
@@ -144,7 +147,7 @@ LEARNING RESULT:  TERMINATE
 Notice that we used the option **--filetype** to specify the type of the input program, given that SVMRanker supports both Boogie programs and C programs as input file, with the former being the default format. 
 Furthermore, we can also provide the option **--depth_bound** to set the maximal number of phases SVMRanker can use when learning a multiphase ranking function. 
 The default value of this option is 2, and this has been enough in the analysis of **Example1.c**, since **Example1.c** can be proved to terminate by a 2-multiphase ranking function. 
-Such a default value is suitable for several programs, but it can be increased as needed, as we will see with the second example **Example2.c**, as shown below.
+Such a default value is suitable for several programs, but it can be increased as needed, as we will see with the second example **src/example/Example2.c**, as shown below.
 ```C
 	//example/Example2.c
 	int main() {
