@@ -108,7 +108,7 @@ Options:
 ```
 As the help shows, there are several options available to tune the execution of **lmulti**; 
 we present their usage by means of a couple of examples. 
-```
+```C
 //example/Example1.c
 	int main() {
     	int x, y;
@@ -140,7 +140,7 @@ Notice that we used the option **--filetype** to specify the type of the input p
 Furthermore, we can also provide the option **--depth_bound** to set the maximal number of phases SVMRanker can use when learning a multiphase ranking function. 
 The default value of this option is 2, and this has been enough in the analysis of **Example1.c**, since **Example1.c** can be proved to terminate by a 2-multiphase ranking function. 
 Such a default value is suitable for several programs, but it can be increased as needed, as we will see with the second example **Example2.c**, as shown below.
-```
+```C
 	//example/Example2.c
 	int main() {
     		int x, y, z;
