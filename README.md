@@ -16,7 +16,7 @@ The original 91 C files obtained from SV-Comp can be found at []().
 
 ## Log files of the experiments
 
-The log files of the experiments can found in the directory LogFiles/.
+The log files of the experiments can be found in the directory LogFiles/.
 
 ## Screencast of the tool demo
 
