@@ -18,7 +18,7 @@ The original 91 C files obtained from SV-Comp can be found at []().
 
 ## Screencast of the tool demo
 
-The screencast of the tool demostration, named SVMRanker_Screencast, can be downloaded inside this directory.
+The screencast of the tool demostration, named SVMRanker_Screencast.mp4, can be downloaded inside this directory.
 
 ## SVMRanker
 Following instructions can be also found in README.md of SVMRanker.
