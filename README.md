@@ -39,6 +39,20 @@ After having installed the required software, SVMRanker can be used by entering 
 ```
 You should be able to see the following output.
 ```
+SVMRanker --- Version 1.0
+Usage: CLIMain.py [OPTIONS] COMMAND [ARGS]...
+
+  "python3 CLIMain.py COMMAND --help" for more details
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  lmulti
+  lnested
+  parseboogie
+  parsectoboogie
+  parsectopy
 ```
 As we can see, SVMRanker provides five commands. 
 The first two commands allow for proving termination of a given program while the remaining three can be used for parsing the input file and translate it to a different format. 
@@ -70,6 +84,14 @@ This program can be shown to be terminating by means of a 2-multiphase ranking f
 ```
 SVMRanker completes the analysis by returning a 2-multiphase ranking function for the **Example1.c** program, as shown below.
 ```
+SVMRanker --- Version 1.0
+example/Example1.c
+--------------------LEARNING MULTIPHASE SUMMARY-------------------
+MULTIPHASE DEPTH:  2
+LEARNING RESULT:  TERMINATE
+-----------RANKING FUNCTIONS----------
+5.0 * 1 + 1.0 *  y^1 + 5.0 * 1
+0.0796 *  x^1 + 0.482 * 1 + 0.482 * 1
 ```
 Notice that we used the option **--filetype** to specify the type of the input program, given that SVMRanker supports both Boogie programs and C programs as input file, with the former being the default format. 
 Furthermore, we can also provide the option **--depth_bound** to set the maximal number of phases SVMRanker can use when learning a multiphase ranking function. 
@@ -93,6 +115,15 @@ In order to get an appropriate multiphase ranking function for **Example2.c**, o
 ```
 With the help of **--depth_bound**, SVMRanker produces the result shown below.
 ```
+SVMRanker --- Version 1.0
+example/Example2.c
+--------------------LEARNING MULTIPHASE SUMMARY-------------------
+MULTIPHASE DEPTH:  3
+LEARNING RESULT:  TERMINATE
+-----------RANKING FUNCTIONS----------
+2.0 * 1 + 2.0 * 1 + 1.0 *  z^1 + 2.0 * 1
+1.0 * 1 + 0.2154 *  y^1 + 1.0 * 1 + 1.0 * 1
+0.0911 *  x^1 + 0.3226 * 1 + 0.3226 * 1 + 0.3226 * 1
 ```
 We now present the other options that let SVMRanker use different strategies in the process of learning a multiphase ranking function; 
 different strategies regarding how program data points are sampled, how the state space is cut, and what templates are used, influence the running time of SVMRanker and possibly the final result. 
@@ -127,6 +158,31 @@ The usage information of **lnested** can be obtained by the following command, w
 ```
 The output is the following.
 ```
+SVMRanker --- Version 1.0
+Usage: CLIMain.py lnested [OPTIONS] SOURCE
+
+Options:
+  --depth_bound INTEGER           depth bound default set to 2
+  --filetype [C|BOOGIE]           --file C: input is c file. --file BOOGIE:
+                                  input is boogie file. default set to BOOGIE
+
+  --sample_strategy [ENLARGE|CONSTRAINT]
+                                  --sample_strategy ENLARGE: enlarge the
+                                  sample zone when sample num not enough.
+                                  --sample_strategy CONSTRAINT: find feasible
+                                  points by constraint if sample num not
+                                  enough default set to ENLARGE
+
+  --print_level [DEBUG|INFO|NONE]
+                                  --print_level DEBUG: print all the
+                                  information of the learning and debugging
+                                  --print_level INFO: print the information of
+                                  the learning --print_level NONE: only print
+                                  the result information of the learning
+                                  default set to NONE
+
+  --help                          Show this message and exit.
+
 ```
 As we can see, the options of **lnested** are also the ones of **lmulti**;
 also the use of **lnested** is similar to the one of **lmulti**, just the outcome can be different.
@@ -137,4 +193,12 @@ For instance, we can prove termination of **Example2.c** by means of a learned n
 ```
 The output is shown below.
 ```
+SVMRanker --- Version 1.0
+example/Example2.c
+--------------------LEARNING NESTED SUMMARY-------------------
+NESTED DEPTH:  3
+LEARNING RESULT:  TERMINATE
+-----------RANKING FUNCTIONS----------
+1.0 *  z^1.0 + 0.9 * 1; 1.0 *  y^1.0 + 0.9 * 1; 1.0 *  x^1.0 + 0.7 * 1
+
 ```
