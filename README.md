@@ -118,4 +118,23 @@ different strategies regarding how program data points are sampled, how the stat
 
 * **--print_level*
 	This option controls the verbosity of the SVMRanker output.
+	
+	
+The SVMRanker command **lnested**, short for learning nested ranking function, is used for learning a nested ranking function for a given program. 
+The usage information of **lnested** can be obtained by the following command, with the output below.
+ ```
+ python3 ./CLIMain.py lnested --help
+```
+The output is the following.
+```
+```
+As we can see, the options of **lnested** are also the ones of **lmulti**;
+also the use of **lnested** is similar to the one of **lmulti**, just the outcome can be different.
 
+For instance, we can prove termination of **Example2.c** by means of a learned nested ranking function by running SVMRanker as follows.
+```
+  python3 ./CLIMain.py lnested --filetype C --depth_bound 3 example/Example2.c
+```
+The output is shown below.
+```
+```
