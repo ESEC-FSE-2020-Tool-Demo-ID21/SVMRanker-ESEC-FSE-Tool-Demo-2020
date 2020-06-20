@@ -8,7 +8,9 @@ The source code of SVMRanker can be found at [https://github.com/ESEC-FSE-2020-T
 
 ## Benchmarks
 We have used 225 programs in our experiments, which can be found at [./Benchmarks/](https://github.com/ESEC-FSE-2020-Tool-Demo-ID21/SVMRanker-demo/tree/master/Benchmark).
+
 In our experiments, all programs are presented in Boogie. 
+
 The original 91 C files obtained from SV-Comp can be found at []().
 
 
@@ -16,7 +18,7 @@ The original 91 C files obtained from SV-Comp can be found at []().
 
 ## Screencast of the tool demo
 
-The screencast of the demo is available [HERE]()
+The screencast of the tool demostration, named SVMRanker_Screencast, can be downloaded inside this directory.
 
 ## SVMRanker
 ### Installation
