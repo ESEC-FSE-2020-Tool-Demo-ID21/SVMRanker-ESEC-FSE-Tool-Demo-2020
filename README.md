@@ -21,6 +21,8 @@ The original 91 C files obtained from SV-Comp can be found at []().
 The screencast of the tool demostration, named SVMRanker_Screencast, can be downloaded inside this directory.
 
 ## SVMRanker
+Following instructions can be also found in README.md of SVMRanker.
+
 ### Installation
 You should have installed Python 3 and Java Development Kit on your system.
 Currently we can successfully run SVMRanker with Python 3 and JDK 8.0.
