@@ -11,10 +11,12 @@ We have used 225 programs in our experiments, which can be found at [./Benchmark
 
 In our experiments, all programs are presented in Boogie. 
 
-The original 92 C files obtained from SV-Comp can be found at []().
+The original 91 C files obtained from SV-Comp can be found at []().
 
 
 ## Log files of the experiments
+
+The log files of the experiments can found inside this directory.
 
 ## Screencast of the tool demo
 
