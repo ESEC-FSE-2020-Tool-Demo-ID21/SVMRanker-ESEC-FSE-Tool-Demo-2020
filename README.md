@@ -142,9 +142,9 @@ The default value of this option is 2, and this has been enough in the analysis 
 Such a default value is suitable for several programs, but it can be increased as needed, as we will see with the second example **Example2.c**, as shown below.
 ```
 	//example/Example2.c
-	int main() {
-    	int x, y, z;
-    	while (x > 0) {
+	 <font color=blue>int</font> main() {
+    	<font color=blue>int</font> x, y, z;
+    	<font color=blue>int</font> (x > 0) {
     		x = x + y;
     		y = y + z;
     		z = z - 1;
