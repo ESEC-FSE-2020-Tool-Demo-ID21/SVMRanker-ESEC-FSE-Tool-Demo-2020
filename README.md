@@ -63,6 +63,49 @@ To get the detailed usage information for this command, one can use the followin
 ```
   python3 ./CLIMain.py lmulti --help
 ```
+The output is the following.
+```
+SVMRanker --- Version 1.0
+Usage: CLIMain.py lmulti [OPTIONS] SOURCE
+
+Options:
+  --depth_bound INTEGER           depth bound default set to 2
+  --filetype [C|BOOGIE]           --file C: input is c file. --file BOOGIE:
+                                  input is boogie file. default set to BOOGIE
+
+  --sample_strategy [ENLARGE|CONSTRAINT]
+                                  --sample_strategy ENLARGE: enlarge the
+                                  sample zone when sample num not enough.
+                                  --sample_strategy CONSTRAINT: find feasible
+                                  points by constraint if sample num not
+                                  enough default set to ENLARGE
+
+  --cutting_strategy [NEG|MINI|POS]
+                                  use f(x) < b to cut --cutting_strategy POS:
+                                  b is a postive number --cutting_strategy
+                                  NEG: b is a negative number
+                                  --cutting_strategy MINI: b is the minimum
+                                  value of sampled points default set to MINI
+
+  --template_strategy [SINGLEFULL|FULL]
+                                  templates used for learning
+                                  --template_strategy SINGLEFULL: templates
+                                  are either single variable or combination of
+                                  all variables --template_strategy FULL:
+                                  template is combination of all variables
+                                  default set to SINGLEFULL
+
+  --print_level [DEBUG|INFO|NONE]
+                                  --print_level DEBUG: print all the
+                                  information of the learning and debugging
+                                  --print_level INFO: print the information of
+                                  the learning --print_level NONE: only print
+                                  the result information of the learning
+                                  default set to NONE
+
+  --help                          Show this message and exit.
+
+```
 As the help shows, there are several options available to tune the execution of **lmulti**; 
 we present their usage by means of a couple of examples. 
 ```
